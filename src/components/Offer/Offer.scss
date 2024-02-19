@@ -1,0 +1,116 @@
+.offer-container{
+    background-image: url('/images/offer-img.png');
+    // background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 81px 100px 70px;
+    text-align: center;
+    & h1{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 52px;
+        color:#fff;
+        text-align: center;
+        margin-bottom: 120px;
+        text-shadow: 0px 4px 30px  #00000080;
+       
+
+    }
+    &-flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+.offer-box{
+    color: #fff;
+    position: relative;
+    &-text{
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 280px;
+        border-radius: 24px;
+        box-shadow: #00000066;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        position: absolute;
+        top: -45px;
+        left: 30px;
+        box-shadow: 3px 4px 10px 0px #00000033;
+    }
+    & h2{
+        color:#fff;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: center;
+        text-shadow:4px 4px 20px  #00000066;
+    }
+    & h3, ul{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    & h3 span{
+        font-weight: 600;
+    }
+    &-list{
+        text-align: left;
+        width: 327px;
+        padding: 70px 50px 70px 50px ;
+        background-color: #F668A0;
+        box-sizing: border-box;
+        border-radius: 24px;
+        box-shadow: 5px 6px 20px 0px #47001C4D;
+        box-shadow: 0px 4px 50px 0px #FF9BC2 inset;
+        margin-bottom: 40px;
+        & ul span{
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            color: #fff;
+            margin-left: 60px;
+        }
+    }
+    
+}
+
+@media(max-width:900px){
+    .offer-container{
+        & h1{
+            font-size: 26px;
+            line-height: 1;
+
+        }
+    }
+}
+@media(max-width:500px){
+    .offer-container{
+        padding: 81px 20px 70px;
+        
+    }
+}
+@media(max-width:400px){
+    .offer-container{
+        & h1{
+            margin-bottom: 50px;
+        }
+    }
+    .offer-box{
+        & h2{
+            font-size: 14px;
+            line-height: 1;
+        }
+        & h3, ul{
+            font-size: 14px;
+        }
+        &-list{
+            width: 280px;
+        }
+        &-text{
+            width: 220px;
+            left: 30px;
+            top: -30px;
+            border-radius: 15px;
+        }
+    }
+}

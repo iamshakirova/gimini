@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.forma-container {
+    background-image: url('/images/form.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 159px 100px 120px;
+    text-align: center;
+
+    &-inner {
+        & form {
+            width: 774px;
+            padding: 60px 40px 40px 40px;
+            background: #fe70a9f2;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+
+            & h1 {
+                font-size: 44px;
+                font-weight: 600;
+                line-height: 57px;
+            }
+
+            & p {
+                font-family: "Inter", sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 27px;
+                padding: 10px 130px 30px 130px;
+                box-sizing: border-box;
+            }
+
+            & button {
+                margin-left: 170px;
+            }
+        }
+    }
+}
+
+.forma-container-inner-input {
+    margin-bottom: 30px;
+
+    & input {
+        width: 523px;
+        height: 60px;
+        padding: 13px 12px 13px 12px;
+        border-radius: 12px;
+        gap: 10px;
+        border: 1px solid #FFFFFF;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        background: #FFFFFF33;
+
+        &::placeholder {
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 24.2px;
+            color: #FFFFFFB2;
+        }
+    }
+}
+
+@media(max-width:1000px) {
+    .forma-container {
+        padding: 159px 0 120px;
+    }
+}
+
+@media(max-width:900px) {
+    .forma-container {
+        &-inner {
+            & form {
+                width: 302px;
+                padding: 30px 30px 30px 40px;
+                & h1 {
+                    font-size: 30px;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                }
+                & p{
+                    font-size: 10px;
+                    line-height: 12px;
+                    padding: 0;
+                    margin-bottom: 10px;
+
+                }
+                & button{
+                    width: 154px;
+                    height: 30px;
+                    font-size: 12px;
+                    line-height: 0;
+                    padding: 0;
+                    border-radius: 8px;
+                    margin-left: 70px;
+                }
+            }
+        }
+    }
+    .forma-container-inner-input {
+        & input {
+            width: 232px;
+            height: 34px;
+            border-radius: 8px;
+
+            &::placeholder {
+                font-size: 12px;
+                line-height: 14.2px;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    .forma-container {
+        &-inner {
+            & form {
+                width: 230px;
+                & button{
+                    margin-left: 30px;
+                }
+            }
+            
+        }
+    }
+    
+}

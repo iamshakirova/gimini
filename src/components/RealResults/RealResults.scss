@@ -1,0 +1,118 @@
+.realResults-container{
+    padding: 76px 100px 80px;
+    text-align: center;
+    color:#FFFFFF;
+    background-image: url('/images/realResults.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-flex{
+        & h1{
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 52px;
+            letter-spacing: 0em;
+            color: #fff;
+            text-shadow: 0px 4px 30px  #00000080;
+            margin-bottom: 100px;
+        }
+        &-box{
+            // display: flex;
+            // justify-content: center;
+            & img{
+                width: 311px;
+            }
+
+        }
+    }
+}
+
+.slick-next:before {
+    content: url('../../images/next.png');
+}
+.slick-prev:before {
+    content: url('../../images/prev.png');
+}
+.slick-prev{
+    top: 210px;
+    left: -70px;
+}
+.slick-next{
+    top: 210px;
+    right: -60px;
+}
+@media(max-width:600px){
+    .realResults-container{
+        &-flex{
+            & h1{
+                padding: 0;
+                font-size: 26px;
+                line-height: 27px;
+            }
+            &-box{
+                &-product{
+                    width: 100%;
+                    & img{
+                        width: 276px;
+                    }
+                }
+            }
+        }
+    }
+}
+.slick-slider{
+    width: auto!important;
+
+}
+@media(max-width:500px){
+    .realResults-container{
+        padding: 76px 80px 80px;
+        &-flex{
+            &-box{
+                & img{
+                    width: 200px;
+                }
+            }
+        }
+    }
+    .slick-prev{
+        top: 150px;
+        left: -50px;
+        width: 10px;
+    }
+    .slick-next{
+        top: 150px;
+        right: -40px;
+    }
+    // .slick-next:before {
+    //     content: url('../../images/next-adapt.png');
+    // }
+    // .slick-prev:before {
+    //     content: url('../../images/prev-adapt.png');
+    // }
+    .slick-current{
+        width: 300px;
+
+    }
+}
+
+@media(max-width:350px){
+    .realResults-container{
+        padding: 76px 80px 80px;
+        &-flex{
+            &-box{
+                & img{
+                    width: 180px;
+                }
+            }
+        }
+    }
+    .slick-prev{
+        top: 120px;
+        left: -60px;
+        width: 10px;
+    }
+    .slick-next{
+        top: 120px;
+        right: -40px;
+    }
+}

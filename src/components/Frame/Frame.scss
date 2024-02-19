@@ -1,0 +1,16 @@
+.frame{
+    position: relative;
+    & img{
+        position: absolute;
+        right: 0;
+        top: 16px;
+    }
+}
+@media(max-width:900px){
+    .frame{
+        & img{
+            width: 43px;
+            height: 40px;
+        }
+    }
+}

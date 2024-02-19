@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.footer-container{
+    background-color: #FE70A8;
+    padding: 60px;
+    box-sizing:border-box;
+    position: relative;
+    &-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        &-navigation ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            font-family: "Inter", sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: 0.02em;
+            & a{
+                color:#FFFFFF;
+                text-decoration: none;
+            }
+            & img{
+                width: 15px;
+                height: 15px;
+                margin-top: 25px;
+            }
+        }
+        &-media{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 30px;
+            & img{
+                padding: 15px;
+                background: #EBE9E9;
+                box-shadow: 0px 2.767256498336792px 2.2138051986694336px 0px #00000005;
+                border-radius: 18px;
+                box-sizing:border-box;
+                width: 70px;
+
+
+            }
+
+        }
+    }
+    &-rights{
+        display: flex;
+        gap: 10px;
+        font-family: "Manrope", sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0em;
+        color: #FFFFFF;
+        right: 50px;
+        position: absolute;
+
+    }
+    
+}
+@media(max-width:600px){
+    .footer-container{
+        &-flex{
+            &-navigation ul{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .footer-container{
+        &-rights{
+            font-size: 12px;
+            right: inherit;
+        }
+        &-flex{
+            &-logo img{
+                width: 100px;
+
+            }
+            &-media{
+                gap: 10px;
+                & img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 12px;
+                }
+            }
+            &-navigation ul{
+                gap: 2px;
+            }
+        }
+    }
+
+}
+@media(max-width:350px){
+    .footer-container{
+        &-rights{
+            font-size: 12px;
+            right: 30px;
+        }
+    }
+}
+
+   

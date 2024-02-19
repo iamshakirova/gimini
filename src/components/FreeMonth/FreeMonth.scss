@@ -1,0 +1,77 @@
+.freeMonth-container {
+    background-image: url('/images/free.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-blur {
+        background-image: url('/images/Ellipse.png');
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 0;
+        box-sizing: border-box;
+
+        &-text {
+            text-align: center;
+            padding: 120px 100px 210px;
+            box-sizing: border-box;
+            color: #fff;
+
+            & h1 {
+                font-size: 70px;
+                font-weight: 600;
+                line-height: 78px;
+                letter-spacing: 0em;
+                text-shadow: 0px 4px 50px #00000099;
+                margin-bottom: 40px;
+                padding: 0 200px;
+            }
+
+            & p {
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 41px;
+                letter-spacing: 0em;
+                text-shadow: 0px 4px 20px #000000B2;
+
+
+            }
+
+        }
+
+
+    }
+}
+
+@media(max-width:900px) {
+    .freeMonth-container {
+        &-blur {
+            &-text {
+                & h1 {
+                    padding: 0;
+                    font-size: 26px;
+                    line-height: 27px;
+                    margin-bottom: 20px;
+                }
+
+                & p {
+                    font-size: 12px;
+                    line-height: 14px;
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .freeMonth-container{
+        &-blur {
+            &-text {
+                padding: 100px 20px 100px;
+            }
+        }
+
+    }
+}

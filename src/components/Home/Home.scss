@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.home-container{
+    background-image: url('/images/homebg.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &-blur{
+        background-image: url('/images/Ellipse.png');
+        background-position:center ;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 100px 0;
+        box-sizing:border-box;
+        &-text{
+            text-align: center;
+            padding: 120px 100px 140px;
+            box-sizing: border-box;
+            color: #fff;
+            & h1{
+                font-size: 70px;
+                font-weight: 700;
+                line-height: 72.86px;
+                margin-bottom: 23px;
+                text-shadow: 0px 4px 50px #00000099;
+
+            }
+            & p{
+                font-family: "Manrope", sans-serif;
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 60px;
+                text-shadow: 0px 4px 50px #00000099;
+            }
+            & button{
+                width: 252px;
+                height: 76px;
+                padding: 16px 60px 16px 60px;
+                border-radius: 18px;
+                background-color: #FDCA5A;
+                background: linear-gradient(to bottom, #FFB616,#FFB616);
+                box-shadow: 0px -4px 4px 0px #00000040 inset;
+                font-size: 44px;
+                font-weight: 700;
+                border: none;
+                color: #fff;
+            }
+        }
+
+    }
+    
+}
+@media(max-width:900px){
+    .home-container{
+        &-blur{
+            &-text{
+                & h1{
+                    font-size: 22px;
+                    line-height: 27px;
+                    margin-bottom: 10px;
+                }
+                & p{
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+                & button{
+                    width: 126px;
+                    height: 46px;
+                    font-size: 26px;
+                    padding: 0;
+
+                }
+            }
+        }
+    }
+}
+@media(max-width:500px){
+    .home-container{
+        &-blur{
+            &-text{
+                padding: 80px 20px 80px;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.result-container{
+    padding: 76px 120px 76px;
+    text-align: center;
+    color:#FFFFFF;
+    background-image: url('/images/result.png');
+    background-position:center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    & h1{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 52px;
+        letter-spacing: 0em;
+        text-shadow: 0px 4px 30px  #00000080;
+        margin-bottom: 80px;
+        padding: 0 200px;
+    }
+    &-flex{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        :first-child{
+            padding: 20px 30px;
+
+        }
+        :nth-child(2){
+            padding: 20px 35px;
+        }
+        :nth-child(3){
+            padding:20px 0px;
+        }
+        :nth-child(4){
+            width: 440px;
+            padding:20px 0px;
+        }
+        :nth-child(5){
+            width: 440px;
+            padding:20px 0px;
+        }
+        &-box{
+            width: 369px;
+            height: 170px;
+            border-radius: 24px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(234, 201, 25, 0.5) 100%);
+            box-shadow: 2px 3px 4px 0px #00000040;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+            & p{
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 26.07px;
+                text-shadow: 2px 3px 4px #00000040;
+            }
+
+
+        }
+    }
+}
+@media(max-width:900px){
+    .result-container{
+        & h1{
+            padding: 0;
+            font-size: 26px;
+            line-height: 27px;
+        }
+        &-flex{
+            gap: 0;
+            &-box{
+                width: 369px;
+                height: auto; 
+                & p {
+                    font-size: 12px;
+                    line-height: 1;
+    
+                }
+            }
+        }
+    }
+
+}
+
+@media(max-width:500px){
+    .result-container{
+        padding: 76px 20px 76px;
+        & h1{
+            margin-bottom: 30px;
+        }
+        
+    }
+}

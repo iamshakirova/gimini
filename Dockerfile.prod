@@ -1,0 +1,9 @@
+FROM node:alpine AS build
+WORKDIR /gimini
+COPY package.json .
+RUN npm i
+COPY . . 
+RUN npm i run build
+
+FROM nginx
+COPY --from=build /gimini/build /usr/share/nginx/html
